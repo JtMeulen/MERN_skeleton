@@ -8,8 +8,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Put all API endpoints under '/api'
 app.get('/api/health', (req, res) => {
-  console.log('Server is running correctly');
-  res.send("Server is running correctly");
+  res.json({ "status": "healty" });
 });
 
 // The "catchall" handler: for any request that doesn't
@@ -21,4 +20,4 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 5000;
 app.listen(port);
 
-console.log(`MERN app listening on port ${port}`);
+console.log(`MERN App listening on port ${port}`);
