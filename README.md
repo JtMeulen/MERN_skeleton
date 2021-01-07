@@ -20,6 +20,7 @@ Clone this repo to setup your basic MERN stack.
 - In the root folder run ```npm run dev``` which runs the server and client concurrently
 
 ### Folder structure
+```
   .
   ├── client                  # React.js frontend application
   │   ├── src                 # Load and stress tests
@@ -29,8 +30,10 @@ Clone this repo to setup your basic MERN stack.
   ├── package.json            # Tools and utilities      
   ├── .sample-env             # Env variables to be copied in a .env file   
   └── README.md
+```
 
 ### Todo
 - Polish Readme file
 - Add nodemon
-- Update react folder structure
+- Create nice looking main react page
+- Add Sass

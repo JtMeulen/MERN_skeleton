@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Header from '../Header';
 
 const App = () => {
   useEffect(() => {
@@ -8,10 +9,11 @@ const App = () => {
   }, [])
 
   return (
-    <div>
-      Welcome to the MERN stack!
-    </div>
-  );
+    <>
+      <Header />
+      <div>Happy coding!</div>
+    </>
+  )
 }
 
 export default App;
