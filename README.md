@@ -41,3 +41,7 @@ Clone this repo to setup your basic MERN stack.
   ├── .sample-env               # Env variables to be copied in a .env file   
   └── README.md
 ```
+### Todo
+- Create script for out of the box setup
+- Add Sass
+

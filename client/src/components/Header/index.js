@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className={styles.root}>
       <h1>Welcome to the MERN stack!</h1>
-      <img src={mern_img} />
+      <img src={mern_img} alt='' />
       <p>{serverConnected ? 'Connected!' : 'Connecting to server...'}</p>
       {serverError && <p className={styles.error}>Unable to connect to server. Check the console for more info</p>}
     </div>

@@ -7,8 +7,6 @@ const database = process.env.DB_NAME || '';
 
 const connection = `mongodb+srv://${username}:${password}@${cluster}/${database}?retryWrites=true&w=majority`;
 
-console.log(username);
-
 mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
   .then(() => console.log("Database Connected Successfully"))
   .catch(err => console.log(err));
