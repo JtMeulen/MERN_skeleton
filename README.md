@@ -22,17 +22,22 @@ Clone this repo to setup your basic MERN stack.
 ### Folder structure
 ```
   .
-  ├── client                  # React.js frontend application
-  │   ├── src                 # Load and stress tests
-  │   ├── public              # End-to-end, integration tests (alternatively `e2e`)
-  │   └── package.json        # Unit tests
-  ├── server                  # Node.js backend server
-  ├── package.json            # Tools and utilities      
-  ├── .sample-env             # Env variables to be copied in a .env file   
+  ├── client                    # React.js frontend application
+  │   ├── src                 
+  │   │   ├── components        # All React components are here   
+  │   │   ├── assets            # Images, files, etc  
+  │   │   ├── hooks             # Custom hooks folder
+  │   │   ├── utils             # Tools and utilities
+  │   │   ├── index.js          # React.js frontend application
+  │   │   └── root-styles.css   # Global CSS styling
+  │   ├── public                
+  │   └── package.json        
+  ├── server
+  │   ├── api                   # All api routes
+  │   ├── models                # Database schema
+  │   ├── database.js           # Database setup and connection
+  │   └── index.css             # Node.js backend server                    
+  ├── package.json                 
+  ├── .sample-env               # Env variables to be copied in a .env file   
   └── README.md
 ```
-
-### Todo
-- Polish Readme file
-- Create nice looking main react page
-- Add Sass
