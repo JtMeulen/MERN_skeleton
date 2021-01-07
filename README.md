@@ -34,6 +34,5 @@ Clone this repo to setup your basic MERN stack.
 
 ### Todo
 - Polish Readme file
-- Add nodemon
 - Create nice looking main react page
 - Add Sass

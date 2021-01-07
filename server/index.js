@@ -8,7 +8,7 @@ const app = express();
 // require('./database.js');
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../client/build')));
-console.log(__dirname);
+
 // All API routes should come here
 app.use('/api/health', require('./api/health'));
 app.use('/api/users', require('./api/users'));
