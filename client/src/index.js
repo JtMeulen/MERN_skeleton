@@ -1,6 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './root-styles.css';
-import App from './components/App';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-ReactDOM.render(<React.StrictMode><App /></React.StrictMode>, document.getElementById('root'));
+import App from './components/App';
+import combinedReducers from './store/combinedReducers';
+import './root-styles.css';
+
+const store = createStore(combinedReducers, composeWithDevTools());
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+, document.getElementById('root'));
