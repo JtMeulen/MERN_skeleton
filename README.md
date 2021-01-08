@@ -27,6 +27,7 @@ Clone this repo to setup your basic MERN stack.
   │   │   ├── components        # All React components are here   
   │   │   ├── assets            # Images, files, etc  
   │   │   ├── hooks             # Custom hooks folder
+  │   │   ├── store             # Redux store related files
   │   │   ├── utils             # Tools and utilities
   │   │   ├── index.js          # React.js frontend application
   │   │   └── root-styles.css   # Global CSS styling
@@ -41,7 +42,8 @@ Clone this repo to setup your basic MERN stack.
   ├── .sample-env               # Env variables to be copied in a .env file   
   └── README.md
 ```
+
 ### Todo
 - Create script for out of the box setup
 - Add Sass
-
+- Better README
