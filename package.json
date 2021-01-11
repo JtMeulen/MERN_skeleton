@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "devserver": "nodemon server/index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run devserver\" \"npm run client\"",
+    "setup": "npm install; cd client; npm install; npm run build;",
+    "dev-server": "nodemon server/index.js",
+    "dev-client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Joey ter Meulen",

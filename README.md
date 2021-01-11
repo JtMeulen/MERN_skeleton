@@ -1,23 +1,31 @@
-# MERN Stack skeleton
-Clone this repo to setup your basic MERN stack.
+# MERN Stack Boilerplate
+A MERN stack boilerplate application with Redux.js. 
 
-### Setup for Heroku
+### Installation
+- Download this project and run ```npm run setup``` in the root folder
+- Make an initial git commit:
+  ```
+  $ git init
+  $ git add -A && git commit -m "Initial Commit"
+  ```
 - Have Heroku toolbelt installed and make sure you have an account
-- Clone this repo and run ```npm install```
-- Navigate to /client and run ```npm run build```
 - In the root folder run:
   ```
   $ heroku create
-  $ git push heroku master
+  $ git push heroku master 
   ```
 
+### Deployment
+- Commit you latest changes and run ```$ git push heroku master```
+
 ### MongoDB connection
-- Create a MongoDB account and setup a new cluster
-- Copy the variables from .sample-env to a new .env file and add the correct details
-- Uncomment line 8 in the root index.js file
+- Create a MongoDB account and create a new cluster/database
+- Copy the variables from [.sample-env](.sample-env) to a new .env file and add the correct details
+- Uncomment [this line](./server/index.js#L8) in the server/index.js file
 
 ### Local development
 - In the root folder run ```npm run dev``` which runs the server and client concurrently
+- Or run both ```npm run dev-client``` and ```npm run dev-server``` in separate terminals
 
 ### Folder structure
 ```
@@ -44,6 +52,4 @@ Clone this repo to setup your basic MERN stack.
 ```
 
 ### Todo
-- Create script for out of the box setup
 - Add Sass
-- Better README
