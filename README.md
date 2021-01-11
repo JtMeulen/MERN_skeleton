@@ -6,9 +6,9 @@ A MERN stack boilerplate application with Redux.js.
 - Make an initial git commit:
   ```
   $ git init
-  $ git add -A && git commit -m "Initial Commit"
+  $ git add -A && git commit -m "initial commit"
   ```
-- Have Heroku toolbelt installed and make sure you have an account
+- Have [Heroku toolbelt](https://devcenter.heroku.com/articles/heroku-cli) installed and make sure you have an [Heroku](https://www.heroku.com/) account
 - In the root folder run:
   ```
   $ heroku create
@@ -16,10 +16,10 @@ A MERN stack boilerplate application with Redux.js.
   ```
 
 ### Deployment
-- Commit you latest changes and run ```$ git push heroku master```
+- Commit your latest changes and run ```$ git push heroku master```
 
 ### MongoDB connection
-- Create a MongoDB account and create a new cluster/database
+- Create a [MongoDB](https://www.mongodb.com/) account and create a new cluster/database
 - Copy the variables from [.sample-env](.sample-env) to a new .env file and add the correct details
 - Uncomment [this line](./server/index.js#L8) in the server/index.js file
 
